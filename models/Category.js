@@ -23,7 +23,8 @@ Category.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'category',
+    modelName: 'Category',
+    tableName: 'categories',
   }
 );
 

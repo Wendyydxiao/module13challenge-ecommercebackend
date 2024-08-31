@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
   // find all products
   // be sure to include its associated Category and Tag data
   Product.findAll({
-    include: [{ model: Category }, { model: Tag, through: ProductTag }]
+    include: [{ model: Category }, { model: Tag, through: ProductTag, as:'Tags' }]
   })
     .then((productData) => res.status(200).json(productData))
     .catch((err) => {
@@ -106,7 +106,7 @@ router.put('/:id', (req, res) => {
         });
       }
 
-      return res.json(product);
+      return res.json({ message: 'Product updated successfully!'});
     })
     .catch((err) => {
       // console.log(err);
