@@ -4,6 +4,8 @@
 ## Description
 This project aims to build the back end for an e-commerce site for internet retailers to manage (create/update/delete) their product related information. It configures Express.js API to use Sequelize to interact with a PostgreSQL database. And all endpoints can be verified using Insomnia and able to reuse for other user interface.
 
+Walkthrough video link: https://www.loom.com/share/7296d96a9fea4ff28774a2b8486870d5?sid=1dfda59d-083c-4f22-ae45-eb0962606b55
+
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
